@@ -25,3 +25,7 @@ Kalo ada proyeknya :
 }
 
 **Kadang BUG pas nyari perusahaan, itu tinggal jalanin ulang**
+
+Install Kebutuhan :
+pip install -r requirements.txt
+playwright install
