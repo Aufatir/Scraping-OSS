@@ -46,8 +46,8 @@ with sync_playwright() as p:
         # ===== LOGIN =====
         if idx == 0:
             page.goto("https://ui-login.oss.go.id/login")
-            page.get_by_role("textbox", name="Contoh: 081xxxxxxxxx atau").fill("dispenak@gmail.com")
-            page.get_by_role("textbox", name="Masukkan kata sandi").fill("Disperinaker@2024")
+            page.get_by_role("textbox", name="Contoh: 081xxxxxxxxx atau").fill("GANTI INI DULU")
+            page.get_by_role("textbox", name="Masukkan kata sandi").fill("GANTI INI JUGA")
             page.get_by_role("button", name="Masuk").click()
             page.wait_for_url("https://pemrosesan.oss.go.id/#/dashboard", timeout=0)
 
@@ -146,4 +146,5 @@ with sync_playwright() as p:
         page.wait_for_timeout(2000)
 
     browser.close()
+
     print(f"✅ Semua data NIB sudah disimpan di folder '{output_dir}'")
